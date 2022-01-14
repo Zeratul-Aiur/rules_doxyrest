@@ -20,7 +20,7 @@ _known_archives = {
             urls = [
                 "https://github.com/Zeratul-Aiur/rules_doxyrest/releases/download/v0.1.0/doxyrest-2.1.3-windows-amd64.zip",
             ],
-            strip_prefix = "",
+            strip_prefix = "doxyrest-2.1.3-windows-amd64",
             sha256 = "571172ad7520f920abeaea58c181448b2db3f9bb64853b236259f81dea5965e9",
             build_file_content = windows_build_file_content,
         ),
