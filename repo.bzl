@@ -26,10 +26,9 @@ _known_archives = {
         ),
         "linux64": struct(
             urls = [
-                "http://pan.aqrose.com/seafhttp/files/8ebc3192-d324-4d7b-abd7-8c4fee9737f8/doxyrest-2.1.3-linux-amd64.tar.xz",
                 "https://github.com/Zeratul-Aiur/rules_doxyrest/releases/download/v0.1.0/doxyrest-2.1.3-linux-amd64.tar.xz",
             ],
-            strip_prefix = "",
+            strip_prefix = "doxyrest-2.1.3-linux-amd64",
             sha256 = "0935bc24cad596ff8f645fc31af728a89a3fc8ee55d9260fa88d96d7d5aa37e6",
             build_file_content = linux_build_file_content,
         ),
