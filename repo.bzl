@@ -29,7 +29,7 @@ _known_archives = {
                 "https://github.com/Zeratul-Aiur/rules_doxyrest/releases/download/v0.3.0/doxyrest-2.1.3-linux-amd64.tar.gz",
             ],
             strip_prefix = "doxyrest-2.1.3-linux-amd64",
-            sha256 = "0935bc24cad596ff8f645fc31af728a89a3fc8ee55d9260fa88d96d7d5aa37e6",
+            sha256 = "12f1dfbcdf6d4e2f78f6ed3fd15ce7aeaa7b11212298c4363d8ae4de4ce96696",
             build_file_content = linux_build_file_content,
         ),
     },
