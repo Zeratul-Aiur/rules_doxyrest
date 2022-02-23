@@ -1,4 +1,5 @@
 # rules_doxyrest
+
 Bazel rules for running doxyrest.
 
 ## Install
@@ -21,7 +22,7 @@ doxyrest_repository(name = "doxyrest")
 Adjust the settings in your Doxyrest configuration file `doxyrest-config.lua`.Then run doxyrest.
 
 ```sh
-bazel run @doxyrest//:doxyrest -c doxyrest-config.lua
+bazel run @doxyrest//:doxyrest -- -c doxyrest-config.lua
 ```
 
 ## LICENSE
