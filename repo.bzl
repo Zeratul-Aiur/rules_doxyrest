@@ -36,9 +36,9 @@ _known_archives = {
 }
 
 def _os_key(os):
-    if os.name.find("windows") != -1:
+    if os.name.lower().startswith("windows"):
         return "windows64"
-    elif os.name.find("linux") != -1:
+    elif os.name.startswith("linux"):
         return "linux64"
     return os.name
 
@@ -52,7 +52,7 @@ def _get_doxyrest_archive(rctx):
     archive = archives.get(_os_key(rctx.os))
 
     if not archive:
-        fail("rules_doxyrest unknown doxyrest version / operating system combo: doxyrest_version={} os=".format(doxyrest_version, rctx.os.name))
+        fail("rules_doxyrest unknown doxyrest version / operating system combo: doxyrest_version = {} os = {}".format(doxyrest_version, rctx.os.name))
 
     return archive
 
